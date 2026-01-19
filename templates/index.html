@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="https://hips.hearstapps.com/hmg-prod/images/red-heart-64308e503e5fe.jpg" type="image/jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,-25" />
+
+    <title>Monologue</title>
+</head>
+<!-- 
+🌙 midnight calm
+
+background: #0F1115
+card / chat bubble: #1A1D23
+sidebar: #222328
+primary text: #E5E7EB
+secondary text: #9CA3AF
+accent (buttons): #6366F1, #323C50 (soft indigo)
+border: #2A2E36
+-->
+<body class="relative bg-[#0F1115] flex flex-row w-full h-full font-[Inter] text-[#E5E7EB] relative">
+    <div id="top" class="absolute transition-transform duration-500 translate-x-0 -translate-x-full bg-[#222328] w-full md:w-1/2 lg:w-1/4 px-2 py-2 flex flex-col gap-2 h-full">
+        <form id="new-chat" class="flex flex-row gap-1">
+            <input id="newchatname" type="text" placeholder="Channel" class="w-full bg-[#0F1115] rounded-lg border-2 border-[#2A2E36] pl-4 focus:outline-none">
+            <button type="submit" class="flex h-[45px] max-w-[45px] py-2 w-full hover:cursor-pointer bg-[#0F1115] hover:bg-[#1A1D23] transform-colors duration-200 justify-center rounded-lg border-2 border-[#2A2E36] gap-2">
+                <span class="material-symbols-outlined leading-none">chat_add_on</span>
+            </button>
+        </form>
+    </div>
+    <div id="back" class="flex flex-col justify-between min-h-full p-4 w-full">
+        <div id="text-field" chatid="" class="flex flex-1 flex-col items-end gap-1 overflow-y-auto scroll-smooth [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-zinc-600 [&::-webkit-scrollbar-thumb]:rounded-full pr-2">
+            <span id="chat-title" class="text-[#9CA3AF] text-sm">Please select channel</span>
+        </div>
+        <form id="maintext" class="w-full flex flex-row items-center gap-2 z-10">
+            <button type="button" id="toggle-menu" class="flex hover:cursor-pointer bg-[#1A1D23] p-2 border-2 rounded-lg border-[#2A2E36]"><span class="material-symbols-outlined">menu</span></button>
+            <input inputmode="latin" id="text" class="bg-[#1A1D23] w-full rounded-lg border-2 border-[#2A2E36] placeholder:text-[#5D5D5D] h-[45px] px-4 focus:outline-none" placeholder="Write Something..." autocomplete="">
+            <button type="submit" class="min-w-[45px] h-[45px] bg-[#323C50] rounded-lg material-symbols-outlined hover:cursor-pointer">Send</button>
+        </form>
+    </div>
+    <script src="../static/index.js"></script>
+</body>
+</html>
