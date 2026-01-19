@@ -67,4 +67,4 @@ The app will start on `http://0.0.0.0:4321` (or your local equivalent).
 
 Traditional note-taking apps can feel formal and high-pressure. **Monologue** treats your inner thoughts like a conversation. Whether you're clearing your head after a long day or quickly jotting down a midnight idea, just send a message to yourself.
 
-```
+README.md is AI generated, it may contains inaccuracy.
